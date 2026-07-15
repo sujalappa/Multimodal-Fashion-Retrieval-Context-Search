@@ -1,0 +1,15 @@
+# Large Data Files
+data/images/
+data/indexes/
+data/*.json
+
+# Python virtual environments & Caching
+__pycache__/
+*.pyc
+venv/
+.conda/
+.ipynb_checkpoints/
+
+# System logs & Scratch files
+.system_generated/
+scratch/

@@ -1,0 +1,9 @@
+torch
+numpy
+Pillow
+tqdm
+transformers
+google-generativeai
+open-clip-torch
+sentence-transformers
+faiss-cpu
