@@ -29,9 +29,6 @@ This repository contains the source code for a multimodal fashion search engine.
 ### Evaluation Runner
 *   `benchmark.py`: Evaluates all five search pipelines side-by-side on 700 images against 10 distinct queries, calculating Recall@5, Recall@10, mAP@5, MRR, and search Latency.
 
-### Help Utility
-*   `help.py`: A simple command-line guide showing all execution commands, steps, and options.
-
 ---
 
 ## 2. Setup & Installation
