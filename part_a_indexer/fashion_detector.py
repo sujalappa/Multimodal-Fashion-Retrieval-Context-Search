@@ -1,3 +1,16 @@
+# ==============================================================================
+# FALLBACK NOTICE:
+# This script (fashion_detector.py) is NOT used in our main indexing pipeline.
+# It is only included as a fallback reference for when datasets are completely 
+# raw and do not contain pre-defined crop/bounding box coordinates.
+#
+# LIMITATIONS:
+# 1. This model performs very poorly on complex runway or street outfits.
+# 2. It struggles to detect overlapping garments (e.g. ties under jackets).
+# 3. It is slow on CPU and has low precision, which degrades indexing quality.
+# Use ground-truth bounding box coordinates from metadata.json instead.
+# ==============================================================================
+
 import torch
 from PIL import Image
 from transformers import AutoImageProcessor, AutoModelForObjectDetection

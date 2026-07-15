@@ -12,6 +12,7 @@ This repository contains the source code for a multimodal fashion search engine.
 *   `marqo_siglip_embedder.py`: Wrapper for the **Marqo-FashionSigLIP** (768-dim) model, loaded via `open_clip` with custom sentence-level text chunking.
 *   `fashion_clip_embedder.py`: Wrapper for the **Fashion-CLIP** (512-dim) model, loaded via Hugging Face `transformers` with text chunking.
 *   `siglip_embedder.py`: Wrapper for the vanilla **SigLIP-2** (768-dim) model.
+*   `fashion_detector.py`: **[FALLBACK ONLY]** Contains a fine-tuned Conditional-DETR fashion object detector model. This script is **not used** in the main production pipeline due to significant performance limitations on complex outfits; it is kept only as a conceptual fallback for un-annotated raw data.
 
 ### Retrieval Engine (`part_b_retriever/`)
 *   `query.py`: The command-line utility to run manual text searches against any of the indexed models.
@@ -27,6 +28,9 @@ This repository contains the source code for a multimodal fashion search engine.
 
 ### Evaluation Runner
 *   `benchmark.py`: Evaluates all five search pipelines side-by-side on 700 images against 10 distinct queries, calculating Recall@5, Recall@10, mAP@5, MRR, and search Latency.
+
+### Help Utility
+*   `help.py`: A simple command-line guide showing all execution commands, steps, and options.
 
 ---
 
